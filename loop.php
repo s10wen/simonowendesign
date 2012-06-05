@@ -148,7 +148,7 @@
 
 			<footer class="entry-utility">
 				<?php if ( count( get_the_category() ) ) : ?>
-					<?php printf( __( 'Posted in %2$s', 'boilerplate' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
+					<?php printf( __( '%2$s', 'boilerplate' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ' ' ) ); ?>
 					<?php /*|*/?>
 				<?php endif; ?>
 				<?php
@@ -160,6 +160,7 @@
 				<?php endif; ?>
 				<?php/* comments_popup_link( __( 'Leave a comment', 'boilerplate' ), __( '1 Comment', 'boilerplate' ), __( '% Comments', 'boilerplate' ) ); */?>
 				<?php edit_post_link( __( 'Edit', 'boilerplate' ), '| ', '' ); ?>
+				<a class="read-more" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'boilerplate' ), the_title_attribute( 'echo=0' ) ); ?>">Read more...</a>
 			</footer><!-- .entry-utility -->
 		
 		</article><!-- #post-## -->
