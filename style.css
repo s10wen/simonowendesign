@@ -205,7 +205,7 @@ img {
 }
 
 body {
-	background: url('images/bg.png');
+	background: url(img/bg.png);
 }
 
 .wrap {
@@ -777,7 +777,7 @@ div.clears, span.clears {
 	padding: 0;
 }
 #arrowImg {
-	background: transparent url('images/arrow_down_6x3.gif') no-repeat right center scroll;
+	background: transparent url('img/arrow_down_6x3.gif') no-repeat right center scroll;
 	width: 16px;
 	_width: 13px;
 	height: 20px;

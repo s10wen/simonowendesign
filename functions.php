@@ -103,7 +103,7 @@ function boilerplate_setup() {
 	// Your changeable header business starts here
 	define( 'HEADER_TEXTCOLOR', '' );
 	// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
-	define( 'HEADER_IMAGE', '%s/images/headers/path.jpg' );
+	define( 'HEADER_IMAGE', '%s/img/headers/path.jpg' );
 
 	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
 	// Add a filter to boilerplate_header_image_width and boilerplate_header_image_height to change these values.
@@ -127,8 +127,8 @@ function boilerplate_setup() {
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
 		'berries' => array(
-			'url' => '%s/images/headers/starkers.png',
-			'thumbnail_url' => '%s/images/headers/starkers-thumbnail.png',
+			'url' => '%s/img/headers/starkers.png',
+			'thumbnail_url' => '%s/img/headers/starkers-thumbnail.png',
 			/* translators: header image description */
 			'description' => __( 'Boilerplate', 'boilerplate' )
 		)

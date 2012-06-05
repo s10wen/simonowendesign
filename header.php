@@ -62,13 +62,13 @@
 			<section id="content" class="col-six nmr" role="main">
 				<?php if ( is_home() ) {?>
 					<div id="logo">
-						<a href="/"><img src="/images/simonowendesign-logo.png" alt="Simon Owen Design" /></a>
+						<a href="/"><img src="/img/simonowendesign-logo.png" alt="Simon Owen Design" /></a>
 					</div>
 					<h1>Front End Web Developer <a href="http://twitter.com/absoluteagency">@absoluteagency</a></h1>
 				<?php }?>
 				<?php if ( ! is_home() ) {?>
 					<div id="logo">
-						<a href="/"><img src="/images/so-logo.png" alt="Simon Owen Design" /></a>
+						<a href="/"><img src="/img/so-logo.png" alt="Simon Owen Design" /></a>
 					</div>
 				<?php }?>
 				<nav id="access" role="navigation">
