@@ -97,7 +97,7 @@ a:link { -webkit-tap-highlight-color: #ff0; }
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
-a, a:active, a:visited {
+a {
 	color: #333;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
@@ -200,24 +200,12 @@ body.home .poster img {
 	-webkit-box-shadow: inset 0px 0px 5px 0 #666;
 	max-height: 600px;
 	padding: 40px;
+	background: #fff;
 }
 
 .image {
 	text-align: center;
 	margin: 4% 0;
-}
-
-#logo {
-	text-align: center;
-	margin: 2% 0;
-}
-
-#logo a:hover {
-	background: 0;
-}
-
-body {
-	background: url(img/bg.png);
 }
 
 .wrap {
@@ -226,7 +214,6 @@ body {
 }
 
 article {
-	background: #fff;
 	padding: 2%;
 	margin: 0 0 4%;
 	float: left;
@@ -278,8 +265,6 @@ nav,
 footer {
 	text-align: center;
 	margin: 2% 0;
-	border-top: 1px solid #444;
-	border-bottom: 1px solid #444;
 }
 article footer {
 	margin: 0;
@@ -288,23 +273,20 @@ footer {
 	text-align: left;
 }
 nav li {
-	padding: 20px 4%;
+	padding: 30px 4%;
 	display: inline-block;
 }
 
 nav a {
-	padding: 10px 20px;
+	padding: 15px 25px;
 	font-size: 1.5em;
-	border-bottom: 2px solid #333;
+	border-radius: 5px;
 }
 
 nav a:hover,
 .current-menu-item a {
-	color: #444;
 	cursor: pointer;
-	border-bottom: 15px solid #444;
-	background: #000;
-	border-radius: 15px 15px 0 0;
+	border-radius: 25px;
 }
 
 .nav-previous {
@@ -344,8 +326,7 @@ footer .col-three {
 #social a {
 	margin: 0 0 0 10px;
 	padding: 12px 20px;
-	background: #000;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 
 #social li {
@@ -354,8 +335,6 @@ footer .col-three {
 }
 
 #social a:hover {
-	color: #999;
-	background: #444;
 	border-radius: 25px;
 }
 
@@ -523,7 +502,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+#tagline {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	font-size: 2em;
 	margin: 1% 0;
@@ -543,7 +523,20 @@ nav a,
 	text-decoration: none;
 }
 
-body.home h1 {
+#title a,
+#logo a {
+	margin: 0 auto;
+	text-indent: -9999px;
+	display: block;
+	width: 300px;
+	height: 312px;
+}
+
+#logo a {
+	height: 317px;
+}
+
+#tagline {
 	text-align: center;
 }
 
@@ -663,7 +656,6 @@ Verdana, Tahoma, Geneva, sans-serif - t
 #contact select,
 #contact input,
 #contact textarea {
-	background:#eee;
 	border: 0;
 	border-bottom: 2px solid #999;
 	font-size: 1.4em;
@@ -679,8 +671,6 @@ Verdana, Tahoma, Geneva, sans-serif - t
 
 #contact input.wpcf7-submit {
 	width: 100%;
-	color: #333;
-	background: #000;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
@@ -691,8 +681,6 @@ Verdana, Tahoma, Geneva, sans-serif - t
 
 #contact input.wpcf7-submit:hover {
 	cursor: pointer;
-	color: #999;
-	background: #444;
 	border-radius: 15px;
 	border: 0;
 }
@@ -729,6 +717,11 @@ div.wpcf7-validation-errors {
 	margin: 0 !important;
 }
 
+/* Hide the 'next & prev' navigation on the homepage */
+#nav-below {
+	display: none;
+}
+
 /* Hide 'Read More Link' from the loop */
 .more-link {
 	display: none;
@@ -754,20 +747,18 @@ display: none;
 }
 
 a.scroll {
-	background: #000;
-	padding: 30px 20px;
+	padding: 15px 25px;
 	text-decoration: none;
-	font-size: 2em;
-	font-weight: bold;
+	font-size: 1.5em;
 	font-style: italic;
 	font-family: Georgia, Times, "Times New Roman", serif;
 	display: block;
-	margin: 20px 0;
+	margin: 20px auto;
+	width: 10%;
+	border-radius: 5px;
 }
 
 .scroll:hover {
-	color: #999;
-	background: #444;
 	border-radius: 25px;
 }
 
