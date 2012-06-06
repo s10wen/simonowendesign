@@ -1,3 +1,40 @@
+/*
+	Theme Name: Boilerplate
+	Theme URI: http://aarontgrogg.com/boilerplate/
+	Description: A merger created by Aaron T. Grogg (<a href="http://aarontgrogg.com/">http://aarontgrogg.com/</a>) of the HTML5 Boilerplate (<a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a>) and the Starkers theme (<a href="http://starkerstheme.com/">http://starkerstheme.com/</a>), Boilerplate: Starkers provides developers with an ideal, bleeding-edge, clean-start theme.  Mark-up is minimal (thanks Elliott) and the most edge-case web technology is baked right in (thanks Paul, Divya and a large cast of supporting characters)!  Boilerplate themes are designed to serve as a Parent theme to whatever Child (<a href="http://codex.wordpress.org/Child_Themes">http://codex.wordpress.org/Child_Themes</a>) you care to add, but you could just as easily use this as a starting point and alter the PHP as your design needs.  More about this theme can be found at <a href="http://aarontgrogg.com/boilerplate/">http://aarontgrogg.com/boilerplate/</a>.
+	Author: Aaron T. Grogg, based on the work of Paul Irish, Divya Manian, and Elliot Jay Stocks
+	Author URI: http://aarontgrogg.com/
+	Version: 3.0
+	Tags: custom-menu, editor-style, theme-options, threaded-comments, sticky-post, microformats, rtl-language-support, translation-ready
+
+	License: GNU General Public License v2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+	This CSS file is a concatenation of style.css from HTML5 Boilerplate and style.css from Starkers.
+	Comment blocks indicate where each begins and ends, like this, for example...
+*/
+
+/** START HTML5 Boilerplate CSS **/
+
+/**
+ * HTML5 ✰ Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ */
+
+
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
 html, body, body div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
@@ -733,3 +770,89 @@ a.scroll {
 	background: #444;
 	border-radius: 25px;
 }
+
+/* Custom Select Box 
+.selectME ul{ remove unwanted focus outlines from links 
+	noFocusLine: expression(this.onFocus=this.blur())
+	outline: none;
+	}
+*.selectME:focus ul, *.selectME:focus .cornerstop{ 
+	outline: none; 
+	}
+
+div.clears, span.clears {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+#arrowImg {
+	background: transparent url('img/arrow_down_6x3.gif') no-repeat right center scroll;
+	width: 16px;
+	_width: 13px;
+	height: 20px;
+	_height: 18px;
+	z-index: 10000;
+	display: inline-block;
+	margin:0;
+	padding: 0;
+}
+
+div.selectME {
+	width: 100% !important;
+}
+
+div.selectME div.first {
+	font-size: 1.4em;
+	display: block;
+	line-height: normal;
+	margin: 0;
+	padding: 6px;
+	cursor: pointer;
+	position: static;
+	*margin-bottom: -1px;
+	background: #eee;
+	border-bottom: 2px solid #999;
+}
+div.selectME div.first span.selectME {
+	float: left;
+	display: block;
+	left: 4px;
+	position: relative;
+	margin: 0;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+div.selectME div.first a, div.selectME div.first a:visited {
+	display: block;
+	padding: 0;
+}
+
+div.selectME ul {
+	list-style-type:none;
+	line-height: normal;
+	padding:0;
+	margin: 0 0 0 -3px;
+	z-index: 103;
+	position: absolute;
+	float: left;
+	clear: none;
+}
+
+div.selectME ul li {
+
+}
+
+div.selectME ul li a, div.selectME ul li a:visited {
+	padding: 4px 8px 4px 8px;
+	background: #eee;
+	border-bottom: 2px solid #999;
+	float: left;
+	width: 100%;
+}
+
+div.selectME ul li a:hover {
+	background: #e8e8e8;
+}
+
+*/
