@@ -29,7 +29,6 @@
 						})();
 					</script>
 				</div>
-<a class="google-plus" href="https://plus.google.com/114327931745086514706" rel="author" target="_blank">Google+</a>
 				<p class="copyright">Copyright 2008-2012 Simon Owen Design</p>
 			</div>
 			
