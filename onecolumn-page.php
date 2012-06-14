@@ -21,7 +21,7 @@ get_header(); ?>
 				<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
 				<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 
-				<?php/* comments_template( '', true ); */?>
+				<?php comments_template( '', true ); ?>
 
 <?php endwhile; ?>
 

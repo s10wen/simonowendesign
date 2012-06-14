@@ -17,8 +17,6 @@ get_header(); ?>
 				<?php endif; ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h2 class="entry-title"><?php the_title(); ?></h2>
-					
-					<?php/*
 					<div class="entry-meta">
 						<?php
 							printf(__('By %2$s', 'boilerplate'),
@@ -54,8 +52,6 @@ get_header(); ?>
 						?>
 						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 					</div><!-- .entry-meta -->
-					*/?>
-					
 					<div class="entry-content">
 						<div class="entry-attachment">
 <?php if ( wp_attachment_is_image() ) :
@@ -97,7 +93,7 @@ get_header(); ?>
 							<?php boilerplate_posted_in(); ?>
 							<?php edit_post_link( __( 'Edit', 'boilerplate' ), ' <span class="edit-link">', '</span>' ); ?>
 						</footer><!-- .entry-utility -->
-<?php /* comments_template(); */ ?>
+<?php comments_template(); ?>
 					</div><!-- .entry-content -->
 				</article>
 <?php endwhile; ?>

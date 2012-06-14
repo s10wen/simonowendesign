@@ -55,7 +55,7 @@ get_header(); ?>
 					</footer><!-- .entry-utility -->
 				</article><!-- #post-## -->
 
-				<?php/* comments_template( '', true ); */?>
+				<?php comments_template( '', true ); ?>
 <?php endwhile; // end of the loop. ?>
 <?php/* <?php get_sidebar(); ?> */?>
 <?php get_footer(); ?>
