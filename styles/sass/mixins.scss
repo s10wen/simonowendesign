@@ -10,6 +10,12 @@
 	border-radius: $radius;
 }
 
+@mixin box-shadow {
+	-webkit-box-shadow: 0 0 5px rgba(5, 5, 5, 0.5);
+	-moz-box-shadow:    0 0 5px rgba(5, 5, 5, 0.5);
+	box-shadow:         0 0 5px rgba(5, 5, 5, 0.5);
+}
+
 @mixin transition {
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
