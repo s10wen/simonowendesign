@@ -33,11 +33,11 @@
 			</div>
 			
 			<ul id="social" class="col-three nmr">
-				<li><a target="_blank" href="http://twitter.com/simonowendesign">t</a></li>
-				<li><a target="_blank" href="http://flickr.com/simonowendesign">f</a></li>
-				<li><a target="_blank" href="http://linkedin.com/in/simonowendesign">l</a></li>
-				<li><a target="_blank" href="http://youtube.com/simonowendesign">y</a></li>
-				<li><a target="_blank" href="http://github.com/simonowendesign">g</a></li>
+				<li><a href="http://twitter.com/simonowendesign">t</a></li>
+				<li><a href="http://flickr.com/simonowendesign">f</a></li>
+				<li><a href="http://linkedin.com/in/simonowendesign">l</a></li>
+				<li><a href="http://youtube.com/simonowendesign">y</a></li>
+				<li><a href="http://github.com/simonowendesign">g</a></li>
 			</ul>
 			
 <?php
