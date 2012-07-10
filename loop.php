@@ -158,14 +158,14 @@
 					<?php printf( __( 'Tagged %2$s', 'boilerplate' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
 					|
 				<?php endif; ?>
-				<?php/* comments_popup_link( __( 'Leave a comment', 'boilerplate' ), __( '1 Comment', 'boilerplate' ), __( '% Comments', 'boilerplate' ) ); */?>
+				<?php comments_popup_link( __( 'Leave a comment', 'boilerplate' ), __( '1 Comment', 'boilerplate' ), __( '% Comments', 'boilerplate' ) ); ?>
 				<?php edit_post_link( __( 'Edit', 'boilerplate' ), '| ', '' ); ?>
 				<a class="read-more" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'boilerplate' ), the_title_attribute( 'echo=0' ) ); ?>">Read more...</a>
 			</footer><!-- .entry-utility -->
 		
 		</article><!-- #post-## -->
 
-		<?php /* comments_template( '', true ); */?>
+		<?php comments_template( '', true ); ?>
 
 	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
 
