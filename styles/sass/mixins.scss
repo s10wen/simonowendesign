@@ -16,3 +16,9 @@
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 }
+
+@mixin box-shadow ($top, $left, $blur, $r, $g, $b, $a) {
+	-webkit-box-shadow: $top $left $blur rgba($r,$g,$b,$a);
+	-moz-box-shadow: $top $left $blur rgba($r,$g,$b,$a);
+	box-shadow: $top $left $blur rgba($r,$g,$b,$a);
+}
