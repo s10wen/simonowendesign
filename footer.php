@@ -48,6 +48,8 @@
 ?>
 		</footer><!-- footer -->
 		
+		<!-- Scroll to the Top -->
+		<script type="text/javascript" src="<?php bloginfo( 'template_url'); ?>/js/jquery.scrollTo-1.4.0-min.js"></script>
 		<div class="scroll-wrap">
 			<a href="#top" class="scroll">Going up?</a>
 		</div>
