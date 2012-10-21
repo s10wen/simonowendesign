@@ -327,10 +327,10 @@ function boilerplate_comment( $comment, $args, $depth ) {
 				<em><?php _e( 'Your comment is awaiting moderation.', 'boilerplate' ); ?></em>
 				<br />
 			<?php endif; ?>
-			<footer class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
+			<footer class="comment-meta commentmetadata">
 				<?php
 					/* translators: 1: date, 2: time */
-					printf( __( '%1$s at %2$s', 'boilerplate' ), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)', 'boilerplate' ), ' ' );
+					printf( __( '%1$s', 'boilerplate' ), get_comment_date() );
 				?>
 			</footer><!-- .comment-meta .commentmetadata -->
 			<div class="comment-body"><?php comment_text(); ?></div>
@@ -453,12 +453,12 @@ if ( ! function_exists( 'boilerplate_posted_on' ) ) :
 function boilerplate_posted_on() {
 	printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'boilerplate' ),
 		'meta-prep meta-prep-author',
-		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
+		sprintf( '<span class="entry-date">%3$s</span>',
 			get_permalink(),
 			esc_attr( get_the_time() ),
 			get_the_date()
 		),
-		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
+		sprintf( '<span class="author vcard">%3$s</span>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),
 			sprintf( esc_attr__( 'View all posts by %s', 'boilerplate' ), get_the_author() ),
 			get_the_author()

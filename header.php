@@ -17,6 +17,8 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
 
+		<link rel="author" href="https://plus.google.com/114327931745086514706/posts" />
+
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-28329112-1']);
@@ -44,7 +46,7 @@
 						<a href="/">Simon Owen Design</a>
 					</div>
 				<?php }?>
-				<nav id="access" role="navigation">
+				<nav id="access" class="t" role="navigation">
 				  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 					<a id="skip" class="hidden" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerplate' ); ?>"><?php _e( 'Skip to content', 'boilerplate' ); ?></a>
 					<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>

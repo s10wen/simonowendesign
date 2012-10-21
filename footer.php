@@ -32,7 +32,7 @@
 				<p class="copyright">Copyright 2008-2012 Simon Owen Design</p>
 			</div>
 			
-			<ul id="social" class="col-three nmr">
+			<ul id="social" class="col-three nmr t">
 				<li><a href="http://twitter.com/simonowendesign">t</a></li>
 				<li><a href="http://flickr.com/simonowendesign">f</a></li>
 				<li><a href="http://linkedin.com/in/simonowendesign">l</a></li>
@@ -50,7 +50,7 @@
 		
 		<!-- Scroll to the Top -->
 		<script type="text/javascript" src="<?php bloginfo( 'template_url'); ?>/js/jquery.scrollTo-1.4.0-min.js"></script>
-		<div class="scroll-wrap">
+		<div class="scroll-wrap t">
 			<a href="#top" class="scroll">Going up?</a>
 		</div>
 		

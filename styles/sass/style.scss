@@ -24,18 +24,16 @@ Tags: simonowendesign, simon owen, xhtml, html5, css, css3, jquery, javascript, 
 html { overflow-y: scroll; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
 
 /* j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: $yellow; }
+a:link { -webkit-tap-highlight-color: $highlight; }
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
 a {
 	color: $darkgrey;
-	@include transition;
 }
 a:hover {
-	color: $darkgrey;
-	background: $yellow;
+	color: $highlight;
 }
 
 ul, ol { margin-left: 2em; line-height: 2em; }
@@ -106,8 +104,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301 */
-::-moz-selection { background: $yellow; color:$darkgrey; text-shadow: none; }
-::selection { background:$yellow; color:$darkgrey; text-shadow: none; }
+::-moz-selection { background: $highlight; color:$darkgrey; text-shadow: none; }
+::selection { background:$highlight; color:$darkgrey; text-shadow: none; }
 
 /**
  * Primary styles
@@ -115,18 +113,16 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
  * Author: Simon Owen Design
  */
 
-/* Day Theme */
-/* Using as default for now, might add in a theme switcher with a Night Theme */
 body {
-	background: #ccc url(http://simonowendesign.appspot.com/img/bg-day.png);
+	background: #ccc url(http://simonowendesign.appspot.com/img/bg.png);
 }
 
 #title a {
-	background: url(http://simonowendesign.appspot.com/img/simonowendesign-logo-day.png) no-repeat;
+	background: url(http://simonowendesign.appspot.com/img/simonowendesign-logo.png) no-repeat;
 }
 
 #logo a {
-	background: url(http://simonowendesign.appspot.com/img/so-logo-day.png) no-repeat;
+	background: url(http://simonowendesign.appspot.com/img/so-logo.png) no-repeat;
 }
 
 nav,
@@ -158,13 +154,17 @@ a.scroll:hover {
 	background: #222;
 }
 
+.entry-content li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #contact select,
 #contact input,
 #contact textarea {
 	color: #fff;
 	background: #222;
 }
-/* Day Theme - END */
 
 img {
   max-width: 100%;
@@ -211,9 +211,9 @@ body.single .entry-content {
 /* Columns */
 .col-one   { float: left; width: 13%; }
 .col-two   { float: left; width: 30%; }
-.col-three { float: left; width: 47%  }
-.col-four  { float: left; width: 64%  }
-.col-five  { float: left; width: 81%  }
+.col-three { float: left; width: 47%; }
+.col-four  { float: left; width: 64%; }
+.col-five  { float: left; width: 81%; }
 .col-six   { float: left; width: 98%; }
 
 .col-one,
@@ -240,6 +240,10 @@ body.single .entry-content {
 
 .fr {
   float: right;
+}
+
+.t a {
+  @include transition;
 }
 
 /* Description */
@@ -550,7 +554,7 @@ nav a,
 
 p {
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.8em;
   margin: 0 0 1em;
 }
@@ -573,8 +577,15 @@ body.single-post article p {
   font-size: 2em;
 }
 
-.description a {
+.description a,
+.entry-meta a {
   text-decoration: none;
+}
+
+.entry-meta {
+  font-size: .9em;
+  font-style: italic;
+  margin: 1% 0;
 }
 
 /* Contact Form 7 */
@@ -605,12 +616,11 @@ body.single-post article p {
 
 #contact input.wpcf7-submit {
   width: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
   border: 0;
   -webkit-appearance: none;
+
+  @include transition;
+
 }
 
 #contact input.wpcf7-submit:hover {

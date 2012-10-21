@@ -9,22 +9,15 @@
 
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	
-				<?php /*
-				<nav id="nav-above" class="navigation">
-					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?>
-					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?>
-				</nav><!-- #nav-above -->
-				*/ ?>
 				
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1><?php the_title(); ?></h1>
 					
-					<?php/*
+					
 					<div class="entry-meta">
 						<?php boilerplate_posted_on(); ?>
 					</div><!-- .entry-meta -->
-					*/?>
+					
 					
 					<div class="entry-content">
 						<?php the_content(); ?>
@@ -41,10 +34,6 @@ get_header(); ?>
 					</footer><!-- #entry-author-info -->
 <?php endif; ?>
 					<footer class="entry-utility">
-						
-						<?php /* Hide 'Posted In' Text 
-							<?php boilerplate_posted_in(); ?>
-						*/?>
 
 
 							<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . '</span> %title' ); ?></div>
