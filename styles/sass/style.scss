@@ -54,8 +54,12 @@ sub { bottom: -0.25em; }
 
 pre {
   /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
-  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   padding: 15px;
+  font-family: monospace, serif;
+  background: $white;
 }
 
 .ie6 legend, .ie7 legend { margin-left: -7px; }
@@ -224,11 +228,16 @@ body {
 
 h1,
 h2,
+h3,
 #tagline {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 2em;
   margin: 1% 0;
   font-weight: normal;
+}
+
+h3 {
+  font-size: 1.7em; 
 }
 
 #social a {
@@ -239,6 +248,7 @@ h2,
 
 h1 a,
 h2 a,
+h3 a,
 nav a,
 #social a {
   text-decoration: none;
@@ -263,12 +273,8 @@ nav a,
 p {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.2em;
-  line-height: 1.8em;
-  margin: 0 0 1em;
-}
-
-body.single-post article p {
-  margin: 0 0 1em;
+  line-height: 2em;
+  margin: 0 0 2em;
 }
 
 .entry-meta a {
