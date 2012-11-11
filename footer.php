@@ -33,11 +33,11 @@
 			</div>
 			
 			<ul id="social" class="col-three nmr t">
-				<li><a href="http://twitter.com/simonowendesign">t</a></li>
-				<li><a href="http://flickr.com/simonowendesign">f</a></li>
-				<li><a href="http://linkedin.com/in/simonowendesign">l</a></li>
-				<li><a href="http://youtube.com/simonowendesign">y</a></li>
-				<li><a href="http://github.com/simonowendesign">g</a></li>
+				<li><a href="http://twitter.com/simonowendesign">t<span>witter</span></a></li>
+				<li><a href="http://flickr.com/simonowendesign">f<span>lickr</span></a></li>
+				<li><a href="http://linkedin.com/in/simonowendesign">l<span>inkedin</span></a></li>
+				<li><a href="http://youtube.com/simonowendesign">y<span>outube</span></a></li>
+				<li><a href="http://github.com/simonowendesign">g<span>ithub</span></a></li>
 			</ul>
 			
 <?php
@@ -47,6 +47,9 @@
 	get_sidebar( 'footer' );
 ?>
 		</footer><!-- footer -->
+
+		<!-- Added to work local -->
+		<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js?ver=1.6.1"></script>
 		
 		<!-- Scroll to the Top -->
 		<script type="text/javascript" src="<?php bloginfo( 'template_url'); ?>/js/jquery.scrollTo-1.4.0-min.js"></script>

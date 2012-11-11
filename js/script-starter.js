@@ -1,9 +1,5 @@
 //plugin
 jQuery.fn.topLink = function(settings) {
-	settings = jQuery.extend({
-		min: 1,
-		fadeSpeed: 200
-	}, settings);
 	return this.each(function() {
 		//listen for scroll
 		var el = $(this);
@@ -23,14 +19,20 @@ jQuery.fn.topLink = function(settings) {
 
 //usage w/ smoothscroll
 $(document).ready(function() {
+
+	// To The Top - Custom
+	var scroll = '.scroll';
+
 	//set the link
-	$('.scroll').topLink({
+	$(scroll).topLink({
 		min: 400,
 		fadeSpeed: 500
 	});
+
 	//smoothscroll
-	$('.scroll').click(function(e) {
+	$(scroll).click(function(e) {
 		e.preventDefault();
 		$.scrollTo(0,300);
 	});
+
 });

@@ -8,14 +8,18 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" href="<?php bloginfo( 'template_url'); ?>/styles/css/style.css" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		
+
 		<?php wp_head(); ?>
 
 		<meta name="description" content="Front End Web Developer from Manchester, UK currently building websites for @absoluteagency" />
 		<meta name="keywords" content="simon owen design, simon owen, front end, workflow, xhtml, html5, css, css3, jquery, javascript" />
 		<meta name="author" content="Simon Owen Design" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="format-detection" content="telephone=no" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<link rel="author" href="https://plus.google.com/114327931745086514706/posts" />
 
