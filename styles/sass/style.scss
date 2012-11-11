@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
  */
 
 body {
-	background: #ccc url(http://simonowendesign.appspot.com/img/bg.png);
+	background: $white url(http://simonowendesign.appspot.com/img/bg.png);
 }
 
 #title a {
@@ -127,16 +127,16 @@ body {
 
 nav,
 footer {
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border-top: 1px solid $lightgrey;
+	border-bottom: 1px solid $lightgrey;
 }
 
 nav a,
 #social a,
 #contact input.wpcf7-submit,
 a.scroll {
-	color: #333;
-	background: #ccc;
+	color: $darkgrey;
+	background: $lightgrey;
 	background: rgba(204, 204, 204, .2);
 }
 
@@ -145,8 +145,8 @@ nav a:hover,
 #social a:hover,
 #contact input.wpcf7-submit:hover,
 a.scroll:hover {
-	color: #fff;
-	background: #000;
+	color: $white;
+	background: $darkgrey;
 	background: rgba(0, 0, 0, .8);
 }
 
@@ -155,19 +155,19 @@ a.scroll:hover {
 }
 
 .entry-content li {
-	background: #222;
+	background: $darkgrey;
 }
 
 .entry-content li a {
-  color: #fff;
+  color: $white;
   text-decoration: none;
 }
 
 #contact select,
 #contact input,
 #contact textarea {
-	color: #fff;
-	background: #222;
+	color: $white;
+	background: $darkgrey;
 }
 
 img {
@@ -179,12 +179,12 @@ body.home img {
 }
 
 body.home .poster img {
-  border: 10px solid #000;
+  border: 10px solid $darkgrey;
   box-shadow: inset 0 0 5px 0 #666;
   -webkit-box-shadow: inset 0 0 5px 0 #666;
   max-height: 600px;
   padding: 40px;
-  background: #fff;
+  background: $white;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -271,21 +271,6 @@ body.single-post article p {
   margin: 0 0 1em;
 }
 
-.description {
-  text-align: center;
-  border-top: 1px solid #555;
-}
-
-.description h1 {
-  color: #666;
-  font-size: 2.45em;
-}
-
-.description p {
-  font-size: 2em;
-}
-
-.description a,
 .entry-meta a {
   text-decoration: none;
 }
@@ -429,7 +414,7 @@ li.comment {
 }
 
 .avatar {
-  border: 4px solid #fff;
+  border: 4px solid $white;
 
   @include box-shadow(0,0,5px,5,5,5,0.5);
 
@@ -453,9 +438,9 @@ li.comment {
 }
 
 .entry-content li {
-  background-color:#222;
+  background-color:$darkgrey;
   display:inline-block;
-  color:#fff;
+  color:$white;
   padding:6px 24px;
   margin: 0 5px 15px;
   text-decoration:none;
@@ -615,7 +600,7 @@ a.scroll {
     width: 98%;
   }
 
-  a, pre {
+  a {
     word-wrap: break-word;
   }
 
@@ -685,43 +670,4 @@ a.scroll {
 
 }
 
-/**
- * Print styles.
- *
- * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
- */
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
-  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid $lightgrey; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
-}
-
-/* Hide the 'next & prev' navigation on the homepage */
-#nav-below {
-  display: none;
-}
-
-/* Hide 'Read More Link' from the loop */
-.more-link {
-  display: none;
-}
-
-/* Custom 'Read More Link' as default adds # to url string */
-.read-more {
-  float: right;
-}
-
-/*  */
-#entry-author-info {
-display: none;
-}
+@import "print";
