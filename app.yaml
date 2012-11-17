@@ -14,3 +14,7 @@ handlers:
 
 - url: /styles/css
   static_dir: /styles/css
+
+- url: /favicon\.ico
+  static_files: img/favicon.ico
+  upload: img/favicon\.ico
