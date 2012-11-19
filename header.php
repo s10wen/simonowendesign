@@ -6,7 +6,7 @@
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<link rel="stylesheet" href="<?php bloginfo( 'template_url'); ?>/styles/css/style.css" />
+		<link rel="stylesheet" href="http://simonowendesign.appspot.com/style.css" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 		<?php wp_head(); ?>
