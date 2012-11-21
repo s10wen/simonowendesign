@@ -33,6 +33,7 @@
 			</div>
 			
 			<ul id="social" class="col-three nmr t">
+				<li><a href="http://www.setapp.me/users/simonowendesign">s<span>etapp</span></a></li>
 				<li><a href="http://twitter.com/simonowendesign">t<span>witter</span></a></li>
 				<li><a href="http://flickr.com/simonowendesign">f<span>lickr</span></a></li>
 				<li><a href="http://linkedin.com/in/simonowendesign">l<span>inkedin</span></a></li>
