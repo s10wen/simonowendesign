@@ -75,13 +75,13 @@
 		<div id="top" class="wrap">
 			<section id="content" class="col-six nmr" role="main">
 				<?php if ( is_home() ) {?>
-					<h1 id="title">
+					<h1 id="title" class="ir">
 						<a href="/">Simon Owen Design</a>
 					</h1>
 					<div id="tagline">Front End Web Developer</div>
 				<?php }?>
 				<?php if ( ! is_home() ) {?>
-					<div id="logo">
+					<div id="logo" class="ir">
 						<a href="/">Simon Owen Design</a>
 					</div>
 				<?php }?>
