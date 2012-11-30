@@ -397,6 +397,20 @@ footer .col-three {
 }
 
 /* Comments */
+#commentform p,
+label,
+input {
+  float: left;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 46%;
+  padding: 2%;
+  margin: 0 50% 0 0;
+}
+
 li.comment {
   list-style: none;
 }
